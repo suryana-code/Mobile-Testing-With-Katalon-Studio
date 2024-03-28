@@ -1,6 +1,6 @@
 # Katalon Mobile Testing
 
-![Last Commit](https://img.shields.io/github/last-commit/suryana-code/Mobile-UI-Test-with-Katalon-Studio)
+![Last Commit](https://img.shields.io/github/last-commit/suryana-code/Katalon-Mobile-Testing)
 
 
 ## About this repository
