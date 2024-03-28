@@ -39,5 +39,5 @@ Katalon Studio is an intelligent, robust, and scalable automation solution built
 Or you can watch a video tutorial on how to run tests for this project here.
 ➡️ [Test execution video](https://www.youtube.com/watch?v=p0Js7IF17yI)
 
-<a href="https://youtu.be/egsOjqlOkBQ"><img src="https://github.com/suryana-code/Katalon-Mobile-Testing/blob/master/Katalon%20Mobile%20Testing.png?raw=true" width="800"></a>
+<a href="https://youtu.be/egsOjqlOkBQ"><img src="https://github.com/suryana-code/Katalon-Mobile-Testing/blob/master/IMG%20Katalon%20Mobile%20Testing.png?raw=true" width="800"></a>
 
