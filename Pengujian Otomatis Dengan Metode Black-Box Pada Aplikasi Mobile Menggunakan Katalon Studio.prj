@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+   <description></description>
+   <name>Pengujian Otomatis Dengan Metode Black-Box Pada Aplikasi Mobile Menggunakan Katalon Studio</name>
+   <tag></tag>
+   <UUID>23f5b332-7c3c-41b1-a562-bc3cb8f4ab7b</UUID>
+   <migratedVersion>5.9.0</migratedVersion>
+   <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>/Users/topindoku/Katalon Studio/Pengujian Otomatis Dengan Metode Black-Box Pada Aplikasi Mobile Menggunakan Katalon Studio/Pengujian Otomatis Dengan Metode Black-Box Pada Aplikasi Mobile Menggunakan Katalon Studio.prj</projectFileLocation>
+   <sourceContent>
+      <sourceFolderList>
+         <sourceFolderConfiguration>
+            <url>Include/scripts/groovy</url>
+         </sourceFolderConfiguration>
+      </sourceFolderList>
+      <systemFolderList>
+         <systemFolderConfiguration>
+            <url>Include/scripts/groovy</url>
+         </systemFolderConfiguration>
+         <systemFolderConfiguration>
+            <url>Include/features</url>
+         </systemFolderConfiguration>
+         <systemFolderConfiguration>
+            <url>Include/config</url>
+         </systemFolderConfiguration>
+      </systemFolderList>
+   </sourceContent>
+   <timeStampInProperties>false</timeStampInProperties>
+   <type>MOBILE</type>
+</Project>
