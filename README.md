@@ -1,4 +1,5 @@
 # Katalon Mobile Testing
+UI Automation Testing using Katalon Studio
 
 ![Last Commit](https://img.shields.io/github/last-commit/suryana-code/Katalon-Mobile-Testing)
 
