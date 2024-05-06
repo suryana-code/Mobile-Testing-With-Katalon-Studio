@@ -27,7 +27,7 @@ You can download here ➡️: [Download Topindoku Mobile App](https://play.googl
 2. Open the project file using Katalon Studio
 3. Make sure you are using an original device/emulator and have the Topindoku application version 3.11.20 or above installed
 4. Then run the project (_you can run test cases or test suites_)
-_If you encounter any difficulties, please give me feedback at msurya45@gmail.com_
+_If you encounter any difficulties, please give me feedback at msuryana45@gmail.com_
 
 ## Requirement
 1. Katalon Studio v8.6.5 or up
