@@ -1,4 +1,4 @@
-# Katalon Mobile Testing
+# Katalon Studio Mobile Testing
 _UI Automation Testing using Katalon Studio_
 
 
