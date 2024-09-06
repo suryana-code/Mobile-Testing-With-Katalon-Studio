@@ -21,7 +21,7 @@ import com.github.javafaker.Faker as Faker
 
 
 
-//<<<MEMULAI APLIKSI
+//<<<STARTING THE APPLICATION
 int maxRetries = 5
 int retries = 0
 'loop if start application fail'
@@ -38,7 +38,11 @@ while (retries < maxRetries) {
     } 
 }
 
-//<<<MASUK KE LIST MENU-MENU
+
+
+
+
+//<<<ENTER MENU LIST IN THE APPLICATION
 Mobile.tap(findTestObject('icn_Homepage (navbar)'), 0, FailureHandling.OPTIONAL)
 
 Mobile.tap(findTestObject('icn_Lainnya (menu)'), 0)
@@ -71,7 +75,8 @@ while (attempt <= maxAttempts) {
 
 
 
-//<<<MELAKUKAN PENGUJIAN FUNGSI PADA HALAMAN PAKET DATA
+
+//<<<CONDUCTING FUNCTION TESTING ON THE PULSA PURCHASE PAGE
 Mobile.waitForElementPresent(findTestObject('Transaksi Pulsa/Produk Paket Data/txt_Pilih Produk'), 60)
 
 Mobile.verifyElementText(findTestObject('Transaksi Pulsa/Produk Paket Data/txt_Paket Data'), 
@@ -100,7 +105,7 @@ Mobile.pressBack()
 
 Mobile.tap(findTestObject('Transaksi Pulsa/fld_Masukan No Telepon'), 0)
 
-//generate nomor acak
+//GENERATE RANDOM NUMBERS USING JAVAFAKER
 Faker faker = new Faker()
 String generateFaker = faker.number().digits(3)
 phoneNum_result = (('0877' + generateFaker) + '0000000')
@@ -130,7 +135,8 @@ Mobile.tap(findTestObject('Transaksi Pulsa/Produk Paket Data/txt_XL (product)'),
 
 
 
-//<<<MEMILIH NOMINAL TRANSAKSI PAKET DATA
+
+//<<<SELECTING THE PULSA TRANSACTION NOMINAL
 Mobile.waitForElementPresent(findTestObject('Transaksi Pulsa/Produk Paket Data/txt_Pilih Nominal'), 60)
 
 String valuenotlpn_PricePage = Mobile.getText(findTestObject('Transaksi Pulsa/Nominal Transaksi/noid_089xxx (disable field)'), 0)
@@ -144,7 +150,8 @@ Mobile.tap(findTestObject('Transaksi Pulsa/Produk Paket Data/Pilih Nominal/nml_R
 
 
 
-//<<<MELAKUKAN VERIFIKASI PADA HALAMAN KONFIRMASI PEMBAYARAN TRANSAKSI
+
+//<<<MAKE VERIFICATION ON THE TRANSACTION PAYMENT CONFIRMATION PAGE
 Mobile.waitForElementPresent(findTestObject('Transaksi Pulsa/Nominal Transaksi/Konfirmasi Pembayaran/txt_Konfirmasi Pembayaran (title header)'), 60)
 
 Mobile.verifyElementText(findTestObject('Transaksi Pulsa/Nominal Transaksi/Konfirmasi Pembayaran/txt_Konfirmasi Pembayaran (title header)'), 
@@ -182,7 +189,7 @@ Mobile.tap(findTestObject('Transaksi Pulsa/Nominal Transaksi/Konfirmasi Pembayar
 
 
 
-//<<<MELAKUKAN VERIFIKASI PADA HALAMAN INPUT PIN
+//<<<VERIFYING THE PIN INPUT PAGE
 Mobile.verifyElementVisible(findTestObject('Transaksi Pulsa/Nominal Transaksi/Konfirmasi Pembayaran/PIN Topindo/pge_Input PIN'), 0)
 
 Mobile.verifyElementText(findTestObject('Transaksi Pulsa/Nominal Transaksi/Konfirmasi Pembayaran/PIN Topindo/txt_Masukkan PIN'), 
@@ -220,7 +227,7 @@ Mobile.setText(findTestObject('Transaksi Pulsa/Nominal Transaksi/Konfirmasi Pemb
 Mobile.waitForElementPresent(findTestObject('Transaksi Pulsa/Nominal Transaksi/Konfirmasi Pembayaran/PIN Topindo/bottomsheet double trx/btn_Ya'), 
     15, FailureHandling.OPTIONAL)
 
-'transaksi yang sama'
+'if it turns out the transaction is the same as before'
 if (Mobile.verifyElementVisible(findTestObject('Transaksi Pulsa/Nominal Transaksi/Konfirmasi Pembayaran/PIN Topindo/bottomsheet double trx/android.widget.TextView - Transaksi Yang Sama'), 
     3, FailureHandling.OPTIONAL)) {
     Mobile.tap(findTestObject('Transaksi Pulsa/Nominal Transaksi/Konfirmasi Pembayaran/PIN Topindo/bottomsheet double trx/btn_Ya'), 0)
@@ -254,7 +261,7 @@ Mobile.verifyElementVisible(findTestObject('pge_Riwayat'), 0)
 
 
 
-//<<<MELAKUKAN VERIFIKASI PADA HALAMAN RIWAYAT
+//<<<VERIFYING THE HISTORY PAGE
 Mobile.waitForElementPresent(findTestObject('noid_089xxx (Riwayat)'), 60, FailureHandling.OPTIONAL)
 
 String no_transaction = Mobile.getText(findTestObject('noid_089xxx (Riwayat)'), 0)
@@ -265,4 +272,8 @@ Mobile.verifyEqual(no_transaction, valuenotlpn)
 String pricetrxinRiwayat = Mobile.getText(findTestObject('nml_Rp1.xxx (nominal trx Riwayat)'), 0)
 
 Mobile.verifyEqual(pricetrxinRiwayat, price_selected)
+
+
+
+
 
